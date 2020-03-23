@@ -3,7 +3,7 @@ EELAYER 32 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 3
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -18,8 +18,6 @@ Comment7 ""
 Comment8 ""
 Comment9 ""
 $EndDescr
-Connection ~ 1800 9800
-Connection ~ 1800 9400
 Connection ~ 9800 1600
 Connection ~ 7500 1600
 Connection ~ 8300 2100
@@ -93,6 +91,12 @@ Connection ~ 13100 6600
 Connection ~ 3100 2500
 Connection ~ 2900 2500
 Connection ~ 2700 2700
+Connection ~ 1600 8900
+Connection ~ 1600 8800
+Connection ~ 1500 9000
+Connection ~ 3700 9300
+Connection ~ 4200 9700
+Connection ~ 4700 9300
 NoConn ~ 9200 3400
 NoConn ~ 9200 3100
 NoConn ~ 9200 2800
@@ -102,25 +106,27 @@ NoConn ~ 9200 3200
 NoConn ~ 9200 3300
 NoConn ~ 9200 2900
 Wire Wire Line
-	1600 9500 1800 9500
+	1400 8600 1600 8600
 Wire Wire Line
-	1600 9700 1800 9700
+	1400 8700 1600 8700
 Wire Wire Line
-	1600 9800 1800 9800
+	1400 8800 1600 8800
 Wire Wire Line
-	1800 9300 1800 9400
+	1400 8900 1600 8900
 Wire Wire Line
-	1800 9400 1600 9400
+	1400 9000 1500 9000
 Wire Wire Line
-	1800 9500 1800 9400
+	1400 9100 1500 9100
 Wire Wire Line
-	1800 9700 1800 9800
+	1500 9000 1700 9000
 Wire Wire Line
-	1800 9800 1800 9900
+	1500 9100 1500 9000
 Wire Wire Line
-	1900 8100 2100 8100
+	1600 8700 1600 8800
 Wire Wire Line
-	1900 8200 2100 8200
+	1600 8800 1600 8900
+Wire Wire Line
+	1600 8900 2000 8900
 Wire Wire Line
 	2000 5500 2000 5900
 Wire Wire Line
@@ -202,7 +208,13 @@ Wire Wire Line
 Wire Wire Line
 	3700 9200 3700 9300
 Wire Wire Line
-	3700 9300 3800 9300
+	3700 9300 3700 9400
+Wire Wire Line
+	3700 9300 3900 9300
+Wire Wire Line
+	3700 9600 3700 9700
+Wire Wire Line
+	3700 9700 4200 9700
 Wire Wire Line
 	3900 1900 3700 1900
 Wire Wire Line
@@ -218,17 +230,25 @@ Wire Wire Line
 Wire Wire Line
 	4100 3100 3700 3100
 Wire Wire Line
-	4100 9600 4100 9800
-Wire Wire Line
 	4200 2200 3700 2200
 Wire Wire Line
 	4200 2200 4200 3200
 Wire Wire Line
 	4200 2200 4400 2200
 Wire Wire Line
-	4400 9300 4700 9300
+	4200 9600 4200 9700
+Wire Wire Line
+	4200 9700 4200 9800
+Wire Wire Line
+	4200 9700 4700 9700
+Wire Wire Line
+	4500 9300 4700 9300
 Wire Wire Line
 	4700 9300 4700 9200
+Wire Wire Line
+	4700 9300 4700 9400
+Wire Wire Line
+	4700 9700 4700 9600
 Wire Wire Line
 	5200 3300 5200 3500
 Wire Wire Line
@@ -622,31 +642,33 @@ Wire Wire Line
 Wire Wire Line
 	13800 6600 13800 6700
 Wire Notes Line
-	1300 7300 1300 8500
+	1100 7500 1100 8700
 Wire Notes Line
-	1300 7300 3400 7300
+	1100 7500 3200 7500
 Wire Notes Line
-	1300 8500 3400 8500
+	1100 8700 3200 8700
 Wire Notes Line
-	3400 8500 3400 7300
-Text Notes 600  9000 0    50   ~ 0
-Screw terminals for external regulated 5V input\nFuture versions may include the 20-30W\nbuck regulator  and allow "any" input voltage
+	3200 8700 3200 7500
+Text Notes 800  9600 0    50   ~ 0
+5.08mm pluggable\nWJ2EDGRC-5.08-6P or\nPhoenix MSTBA\nfatter than needed, but good for\nfat fingers and low v drop\n
 Text Notes 1100 5200 0    50   ~ 0
 Programming header\nfor EEPROM
 Text Notes 1100 6800 0    50   ~ 0
 Optional, pin straps cover everything but usb device serial!
+Text Notes 1200 10600 0    50   ~ 0
+Screw terminals for external regulated 5V input\nFuture versions may include the 20-30W\nbuck regulator  and allow "any" input voltage
 Text Notes 1300 2700 0    50   ~ 0
 As a HUB, all shields together,\nand grounded at one point.\nAs per SMSC AN 15.17 
-Text Notes 1400 7600 0    59   ~ 0
+Text Notes 1500 8100 0    59   ~ 0
 TPS54820 or\nMP9477 or\nSC6001 with external fets (fuck no!)\n(6 DS ports * 1A * 5V minimum)
 Text Notes 2600 1400 0    50   ~ 0
 usb A MALE for plugging directly into an upstream\n+\nusb b micro for cable connecting as top level
 Text Notes 3500 8900 0    50   ~ 0
 Need as much as 460mA at 3.3V for 7xHS ports enabled!
+Text Notes 3600 10400 0    59   ~ 0
+AP1509/XL1509 are "sexy"\nbut just use a SOT223-standard linear.\n(but not xxx1117! too much power waste!)
 Text Notes 3700 5800 0    59   ~ 0
 DNP\nIf you're using EEPROM,  CFG_SEL0 covers this
-Text Notes 4400 9800 0    59   ~ 0
-AP1509/XL1509 are "sexy"\nbut just use a SOT223-standard linear.\n(but not xxx1117! too much power waste!)
 Text Notes 4700 3100 0    39   ~ 0
 CFG straps\n011: EEPROM\n101: defaults+dyn+led=usb\n100: defaults+dyn ?
 Text Notes 4700 5300 0    50   ~ 0
@@ -767,13 +789,13 @@ $EndComp
 $Comp
 L power:+5V #PWR01
 U 1 1 5E1AE764
-P 1800 9300
-F 0 "#PWR01" H 1800 9150 50  0001 C CNN
-F 1 "+5V" H 1815 9473 50  0000 C CNN
-F 2 "" H 1800 9300 50  0001 C CNN
-F 3 "" H 1800 9300 50  0001 C CNN
-	1    1800 9300
-	1    0    0    -1  
+P 1700 9000
+F 0 "#PWR01" H 1700 8850 50  0001 C CNN
+F 1 "+5V" H 1715 9173 50  0000 C CNN
+F 2 "" H 1700 9000 50  0001 C CNN
+F 3 "" H 1700 9000 50  0001 C CNN
+	1    1700 9000
+	0    1    1    0   
 $EndComp
 $Comp
 L power:+3V3 #PWR06
@@ -908,25 +930,14 @@ F 3 "" H 3300 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
-U 1 1 5E1AE7A5
-P 1800 9900
-F 0 "#PWR02" H 1800 9650 50  0001 C CNN
-F 1 "GND" H 1805 9727 50  0000 C CNN
-F 2 "" H 1800 9900 50  0001 C CNN
-F 3 "" H 1800 9900 50  0001 C CNN
-	1    1800 9900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR04
 U 1 1 5E223B81
-P 2100 8200
-F 0 "#PWR04" H 2100 7950 50  0001 C CNN
-F 1 "GND" H 2105 8027 50  0000 C CNN
-F 2 "" H 2100 8200 50  0001 C CNN
-F 3 "" H 2100 8200 50  0001 C CNN
-	1    2100 8200
+P 2000 8900
+F 0 "#PWR04" H 2000 8650 50  0001 C CNN
+F 1 "GND" H 2005 8727 50  0000 C CNN
+F 2 "" H 2000 8900 50  0001 C CNN
+F 3 "" H 2000 8900 50  0001 C CNN
+	1    2000 8900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -987,12 +998,12 @@ $EndComp
 $Comp
 L power:GND #PWR011
 U 1 1 5E1AE840
-P 4100 9800
-F 0 "#PWR011" H 4100 9550 50  0001 C CNN
-F 1 "GND" H 4105 9627 50  0000 C CNN
-F 2 "" H 4100 9800 50  0001 C CNN
-F 3 "" H 4100 9800 50  0001 C CNN
-	1    4100 9800
+P 4200 9800
+F 0 "#PWR011" H 4200 9550 50  0001 C CNN
+F 1 "GND" H 4205 9627 50  0000 C CNN
+F 2 "" H 4200 9800 50  0001 C CNN
+F 3 "" H 4200 9800 50  0001 C CNN
+	1    4200 9800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1414,6 +1425,28 @@ F 3 "~" H 2800 2700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
+L Device:C_Small C33
+U 1 1 5E842D60
+P 3700 9500
+F 0 "C33" H 3792 9545 50  0000 L CNN
+F 1 "10uF" H 3791 9455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3700 9500 50  0001 C CNN
+F 3 "~" H 3700 9500 50  0001 C CNN
+	1    3700 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C34
+U 1 1 5E848AD5
+P 4700 9500
+F 0 "C34" H 4792 9545 50  0000 L CNN
+F 1 "10uF" H 4791 9455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4700 9500 50  0001 C CNN
+F 3 "~" H 4700 9500 50  0001 C CNN
+	1    4700 9500
+	1    0    0    -1  
+$EndComp
+$Comp
 L Device:C_Small C2
 U 1 1 5E1E3858
 P 6300 5100
@@ -1603,12 +1636,12 @@ $EndComp
 $Comp
 L power:+VDC #PWR03
 U 1 1 5E224365
-P 2100 8100
-F 0 "#PWR03" H 2100 8000 50  0001 C CNN
-F 1 "+VDC" H 2100 8375 50  0000 C CNN
-F 2 "" H 2100 8100 50  0001 C CNN
-F 3 "" H 2100 8100 50  0001 C CNN
-	1    2100 8100
+P 1600 8600
+F 0 "#PWR03" H 1600 8500 50  0001 C CNN
+F 1 "+VDC" H 1600 8875 50  0000 C CNN
+F 2 "" H 1600 8600 50  0001 C CNN
+F 3 "" H 1600 8600 50  0001 C CNN
+	1    1600 8600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1623,39 +1656,6 @@ F 3 "~" H 6800 4400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x02 J1
-U 1 1 5E1AE73C
-P 1400 9500
-F 0 "J1" H 1480 9492 50  0000 L CNN
-F 1 "5V_RAW" H 1480 9401 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal" H 1400 9500 50  0001 C CNN
-F 3 "~" H 1400 9500 50  0001 C CNN
-	1    1400 9500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J2
-U 1 1 5E1AE77D
-P 1400 9800
-F 0 "J2" H 1480 9792 50  0000 L CNN
-F 1 "GND" H 1480 9701 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal" H 1400 9800 50  0001 C CNN
-F 3 "~" H 1400 9800 50  0001 C CNN
-	1    1400 9800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J3
-U 1 1 5E222B6F
-P 1700 8200
-F 0 "J3" H 1780 8192 50  0000 L CNN
-F 1 "V_EXT" H 1780 8101 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal" H 1700 8200 50  0001 C CNN
-F 3 "~" H 1700 8200 50  0001 C CNN
-	1    1700 8200
-	-1   0    0    1   
-$EndComp
-$Comp
 L Connector:Conn_01x03_Male J5
 U 1 1 5E1AED2B
 P 2000 5200
@@ -1667,15 +1667,26 @@ F 3 "~" H 2000 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 5E82DB4D
+P 1200 8900
+F 0 "J1" H 1282 8377 50  0000 C CNN
+F 1 "Conn_01x06" H 1282 8468 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_6-G-5,08_1x06_P5.08mm_Horizontal" H 1200 8900 50  0001 C CNN
+F 3 "~" H 1200 8900 50  0001 C CNN
+	1    1200 8900
+	-1   0    0    1   
+$EndComp
+$Comp
 L Regulator_Linear:AMS1117-3.3 U2
 U 1 1 5E2210EC
-P 4100 9300
-F 0 "U2" H 4100 9541 50  0000 C CNN
-F 1 "SE5120ST33" H 4100 9450 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4100 9500 50  0001 C CNN
-F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 4200 9050 50  0001 C CNN
-F 4 "SE5120ST33" H 4100 9300 50  0001 C CNN "MPN"
-	1    4100 9300
+P 4200 9300
+F 0 "U2" H 4200 9541 50  0000 C CNN
+F 1 "SE5120ST33" H 4200 9450 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4200 9500 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 4300 9050 50  0001 C CNN
+F 4 "SE5120ST33" H 4200 9300 50  0001 C CNN "MPN"
+	1    4200 9300
 	1    0    0    -1  
 $EndComp
 $Comp

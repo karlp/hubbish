@@ -3,7 +3,7 @@ EELAYER 32 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 3
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -180,8 +180,8 @@ Text Notes 9000 5700 0    50   ~ 0
 usb 2.0 7.2.4 (inrush limiting)\nsays ds facing hub ports to provide 120uF minimum.\ncan get 220uF cheap in a slightly bigger footprint\nif really desired but fuck that, yolo\napl3511 app note is 100nF + 150uF
 Text Notes 10100 3200 0    50   ~ 0
 Each pair a Double stack USB port\nC12049 on lcsc or similar
-Text Notes 13900 5700 2    50   ~ 0
-NUP4202 or USBLC6-4xx or ??
+Text Notes 13300 6300 2    50   ~ 0
+NUP4202 or USBLC6-4xx or CS0809
 Text Label 3000 9700 2    59   ~ 0
 DS+
 Text Label 3000 9800 2    59   ~ 0
