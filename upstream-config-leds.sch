@@ -674,7 +674,7 @@ CFG straps\n011: EEPROM\n101: defaults+dyn+led=usb\n100: defaults+dyn ?
 Text Notes 4700 5300 0    50   ~ 0
 Connect for EEP programming\n(holds hub in reset)
 Text Notes 5800 7300 0    197  ~ 0
-Missing:\n* ESD protection on input terminals?\n* lots of stuff?\n* switch connectors to cheap 5mm pitch\n* input caps on 5V?!
+Missing:\n* ESD protection on input terminals?\n* input caps on 5V?!\n* lots of stuff?\n
 Text Notes 5900 8500 0    236  ~ 0
 NOT TODO\n* 24V->5V on board, too much work\n
 Text Notes 6000 3400 0    31   ~ 0

@@ -1,4 +1,4 @@
-update=Mon 23 Mar 2020 01:16:35 AM GMT
+update=Tue 24 Mar 2020 10:06:45 PM GMT
 version=1
 last_client=kicad
 [general]
@@ -35,14 +35,14 @@ version=1
 [ModEditFrame]
 version=1
 [sheetnames]
-1=00000000-0000-0000-0000-00005e77dca3:
+1=00000000-0000-0000-0000-00005e7a7fe6:
 2=00000000-0000-0000-0000-00005e1ad41f:downstream-port-power
 3=00000000-0000-0000-0000-00005e1ad3c1:upstream-config-leds
 [pcbnew]
 version=1
 PageLayoutDescrFile=
 LastNetListRead=
-LastSTEPExportPath=
+LastSTEPExportPath=usb-test-harness.step
 LastIDFExportPath=
 LastVRMLExportPath=
 LastSpecctraDSNExportPath=

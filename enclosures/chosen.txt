@@ -5,3 +5,17 @@ $2.11 in singles, pcb just under 100x100, so space, but also cheap still
 
 98.7 absolute internal, set pcb to 98 width
 85.4 set pcb high to 85
+
+
+It's lovely, but it's only on TME.
+
+
+Other options:
+Hammond 1598 (actually a little too big)
+
+Bud Industries:
+bud HP-3652-B is ... good price, good size, but 90° off, usb ports go in the edge with the cutouts... not ideal (possibly too thin as well!)
+HP-3664-B could work too, bit tight?
+bud cu-794 would be a bit tight but nice price
+CU-388 works! (have requested a step file)
+CU-18428 is even more awesome! (may _not_ be, as the snaps may in places we want to put ports though...
