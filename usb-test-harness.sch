@@ -36,17 +36,6 @@ F 3 "~" H 7000 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H5
-U 1 1 5E78CB41
-P 7000 4500
-F 0 "H5" H 7100 4545 50  0000 L CNN
-F 1 "MountingHole" H 7100 4455 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4mm" H 7000 4500 50  0001 C CNN
-F 3 "~" H 7000 4500 50  0001 C CNN
-	1    7000 4500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole H2
 U 1 1 5E6B1F07
 P 7300 4200

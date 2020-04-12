@@ -1,4 +1,4 @@
-update=Tue 24 Mar 2020 10:06:45 PM GMT
+update=Sun 12 Apr 2020 10:23:11 PM GMT
 version=1
 last_client=kicad
 [general]
@@ -32,17 +32,15 @@ ERC_CheckBusToNetConflicts=1
 version=1
 [SchematicFrame]
 version=1
-[ModEditFrame]
-version=1
 [sheetnames]
-1=00000000-0000-0000-0000-00005e7a7fe6:
+1=00000000-0000-0000-0000-00005e7f7f67:
 2=00000000-0000-0000-0000-00005e1ad41f:downstream-port-power
 3=00000000-0000-0000-0000-00005e1ad3c1:upstream-config-leds
 [pcbnew]
 version=1
 PageLayoutDescrFile=
 LastNetListRead=
-LastSTEPExportPath=usb-test-harness.step
+LastSTEPExportPath=usb-test-harness2.step
 LastIDFExportPath=
 LastVRMLExportPath=
 LastSpecctraDSNExportPath=
@@ -283,3 +281,5 @@ uViaDrill=0.1
 dPairWidth=0.15
 dPairGap=0.15
 dPairViaGap=0.25
+[ModEditFrame]
+version=1
