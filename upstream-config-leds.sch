@@ -1,9 +1,9 @@
 EESchema Schematic File Version 5
-EELAYER 32 0
+EELAYER 33 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 3
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -93,10 +93,13 @@ Connection ~ 2900 2500
 Connection ~ 2700 2700
 Connection ~ 1600 8900
 Connection ~ 1600 8800
-Connection ~ 1500 9000
 Connection ~ 3700 9300
 Connection ~ 4200 9700
 Connection ~ 4700 9300
+Connection ~ 5550 1900
+Connection ~ 1500 9000
+Connection ~ 2450 9200
+Connection ~ 2450 8900
 NoConn ~ 9200 3400
 NoConn ~ 9200 3100
 NoConn ~ 9200 2800
@@ -142,6 +145,10 @@ Wire Wire Line
 Wire Wire Line
 	2200 5300 2400 5300
 Wire Wire Line
+	2300 8900 2450 8900
+Wire Wire Line
+	2300 9200 2450 9200
+Wire Wire Line
 	2400 5900 2400 6000
 Wire Wire Line
 	2400 6000 2400 6100
@@ -169,6 +176,14 @@ Wire Wire Line
 	2900 5500 2900 5700
 Wire Wire Line
 	2900 6300 2900 6400
+Wire Wire Line
+	2950 8900 2450 8900
+Wire Wire Line
+	2950 8950 2950 8900
+Wire Wire Line
+	2950 9150 2950 9200
+Wire Wire Line
+	2950 9200 2450 9200
 Wire Wire Line
 	3100 2500 3300 2500
 Wire Wire Line
@@ -218,7 +233,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 1900 3700 1900
 Wire Wire Line
-	3900 1900 6400 1900
+	3900 1900 5550 1900
 Wire Wire Line
 	3900 2900 3900 1900
 Wire Wire Line
@@ -244,11 +259,15 @@ Wire Wire Line
 Wire Wire Line
 	4500 9300 4700 9300
 Wire Wire Line
+	4600 2200 4600 2350
+Wire Wire Line
 	4700 9300 4700 9200
 Wire Wire Line
 	4700 9300 4700 9400
 Wire Wire Line
 	4700 9700 4700 9600
+Wire Wire Line
+	4850 2200 4600 2200
 Wire Wire Line
 	5200 3300 5200 3500
 Wire Wire Line
@@ -261,6 +280,8 @@ Wire Wire Line
 	5200 3900 5200 3800
 Wire Wire Line
 	5200 4100 5200 4200
+Wire Wire Line
+	5250 2200 5550 2200
 Wire Wire Line
 	5300 3300 5300 3400
 Wire Wire Line
@@ -287,6 +308,10 @@ Wire Wire Line
 	5400 4100 5400 4200
 Wire Wire Line
 	5400 4200 5300 4200
+Wire Wire Line
+	5550 1900 6400 1900
+Wire Wire Line
+	5550 2200 5550 1900
 Wire Wire Line
 	5900 4700 5900 4800
 Wire Wire Line
@@ -661,6 +686,8 @@ Text Notes 1300 2700 0    50   ~ 0
 As a HUB, all shields together,\nand grounded at one point.\nAs per SMSC AN 15.17 
 Text Notes 1500 8100 0    59   ~ 0
 TPS54820 or\nMP9477 or\nSC6001 with external fets (fuck no!)\n(6 DS ports * 1A * 5V minimum)
+Text Notes 1900 9300 0    50   ~ 0
+Must breakdown at ~6V to protect properly
 Text Notes 2600 1400 0    50   ~ 0
 usb A MALE for plugging directly into an upstream\n+\nusb b micro for cable connecting as top level
 Text Notes 3500 8900 0    50   ~ 0
@@ -674,7 +701,7 @@ CFG straps\n011: EEPROM\n101: defaults+dyn+led=usb\n100: defaults+dyn ?
 Text Notes 4700 5300 0    50   ~ 0
 Connect for EEP programming\n(holds hub in reset)
 Text Notes 5800 7300 0    197  ~ 0
-Missing:\n* ESD protection on input terminals?\n* input caps on 5V?!\n* lots of stuff?\n
+Missing:\n* input caps on 5V?!\n* umm, that's it?\n
 Text Notes 5900 8500 0    236  ~ 0
 NOT TODO\n* 24V->5V on board, too much work\n
 Text Notes 6000 3400 0    31   ~ 0
@@ -696,6 +723,14 @@ EE_SCL
 Text Label 4400 2100 0    50   ~ 0
 UP+
 Text Label 4400 2200 0    50   ~ 0
+UP-
+Text Label 4850 2100 2    50   ~ 0
+UP+
+Text Label 4850 2300 2    50   ~ 0
+UP-
+Text Label 5250 2100 0    50   ~ 0
+UP+
+Text Label 5250 2300 0    50   ~ 0
 UP-
 Text Label 5500 3600 0    59   ~ 0
 CFG_SEL0
@@ -796,6 +831,17 @@ F 2 "" H 1700 9000 50  0001 C CNN
 F 3 "" H 1700 9000 50  0001 C CNN
 	1    1700 9000
 	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR067
+U 1 1 5EA3BCF9
+P 2300 8900
+F 0 "#PWR067" H 2300 8750 50  0001 C CNN
+F 1 "+5V" H 2315 9073 50  0000 C CNN
+F 2 "" H 2300 8900 50  0001 C CNN
+F 3 "" H 2300 8900 50  0001 C CNN
+	1    2300 8900
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR06
@@ -941,6 +987,17 @@ F 3 "" H 2000 8900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L power:GND #PWR068
+U 1 1 5EA3D2D3
+P 2300 9200
+F 0 "#PWR068" H 2300 8950 50  0001 C CNN
+F 1 "GND" H 2305 9027 50  0000 C CNN
+F 2 "" H 2300 9200 50  0001 C CNN
+F 3 "" H 2300 9200 50  0001 C CNN
+	1    2300 9200
+	1    0    0    -1  
+$EndComp
+$Comp
 L power:GND #PWR05
 U 1 1 5E1AED60
 P 2400 5300
@@ -1004,6 +1061,17 @@ F 1 "GND" H 4205 9627 50  0000 C CNN
 F 2 "" H 4200 9800 50  0001 C CNN
 F 3 "" H 4200 9800 50  0001 C CNN
 	1    4200 9800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5EA47F9E
+P 4600 2350
+F 0 "#PWR02" H 4600 2100 50  0001 C CNN
+F 1 "GND" H 4605 2177 50  0000 C CNN
+F 2 "" H 4600 2350 50  0001 C CNN
+F 3 "" H 4600 2350 50  0001 C CNN
+	1    4600 2350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1375,16 +1443,16 @@ U 1 1 5E1C596D
 P 12600 1900
 F 0 "D9" V 12645 1830 50  0000 R CNN
 F 1 "D_Small" V 12555 1830 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123F" V 12600 1900 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323" V 12600 1900 50  0001 C CNN
 F 3 "~" V 12600 1900 50  0001 C CNN
 	1    12600 1900
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED_Small D1
+L Device:LED_Small D3
 U 1 1 5E225959
 P 6000 3400
-F 0 "D1" H 6100 3400 50  0000 C CNN
+F 0 "D3" H 6100 3400 50  0000 C CNN
 F 1 "HS1B" H 6000 3543 50  0001 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" V 6000 3400 50  0001 C CNN
 F 3 "~" V 6000 3400 50  0001 C CNN
@@ -1403,10 +1471,21 @@ F 3 "~" V 6000 4000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C_Small C1
+L Device:CP_Small C1
+U 1 1 5E211990
+P 2950 9050
+F 0 "C1" H 3038 9095 50  0000 L CNN
+F 1 "100uF" H 3038 9005 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.4" H 2950 9050 50  0001 C CNN
+F 3 "~" H 2950 9050 50  0001 C CNN
+	1    2950 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C35
 U 1 1 5E1E3985
 P 2000 6000
-F 0 "C1" H 2092 6045 50  0000 L CNN
+F 0 "C35" H 2092 6045 50  0000 L CNN
 F 1 ".1uF" H 2091 5955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2000 6000 50  0001 C CNN
 F 3 "~" H 2000 6000 50  0001 C CNN
@@ -1634,6 +1713,17 @@ F 3 "~" H 10600 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
+L Device:D_Zener D1
+U 1 1 5EA3AB20
+P 2450 9050
+F 0 "D1" V 2405 9130 50  0000 L CNN
+F 1 "SD05-7" V 2495 9130 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323" H 2450 9050 50  0001 C CNN
+F 3 "~" H 2450 9050 50  0001 C CNN
+	1    2450 9050
+	0    1    1    0   
+$EndComp
+$Comp
 L power:+VDC #PWR03
 U 1 1 5E224365
 P 1600 8600
@@ -1678,6 +1768,17 @@ F 3 "~" H 1200 8900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
+L Power_Protection:NUP4202 U12
+U 1 1 5EA2D8DE
+P 5050 2200
+F 0 "U12" V 5300 2000 50  0000 L CNN
+F 1 "NUP4202" V 5300 2250 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5100 2275 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/NUP4202W1-D.PDF" H 5100 2275 50  0001 C CNN
+	1    5050 2200
+	0    1    1    0   
+$EndComp
+$Comp
 L Regulator_Linear:AMS1117-3.3 U2
 U 1 1 5E2210EC
 P 4200 9300
@@ -1690,10 +1791,10 @@ F 4 "SE5120ST33" H 4200 9300 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_Dual_AACC D18
+L Device:LED_Dual_AACC D4
 U 1 1 5E6BDDA6
 P 13400 2300
-F 0 "D18" H 13400 2724 50  0000 C CNN
+F 0 "D4" H 13400 2724 50  0000 C CNN
 F 1 "LTST-C295KGKRKT" H 13400 2633 50  0000 C CNN
 F 2 "LED_SMD:LED_LiteOn_LTST-C295K" H 13430 2300 50  0001 C CNN
 F 3 "~" H 13430 2300 50  0001 C CNN
@@ -1701,10 +1802,10 @@ F 3 "~" H 13430 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_Dual_AACC D19
+L Device:LED_Dual_AACC D5
 U 1 1 5E6C0F69
 P 13400 3000
-F 0 "D19" H 13400 3424 50  0000 C CNN
+F 0 "D5" H 13400 3424 50  0000 C CNN
 F 1 "LTST-C295KGKRKT" H 13400 3333 50  0000 C CNN
 F 2 "LED_SMD:LED_LiteOn_LTST-C295K" H 13430 3000 50  0001 C CNN
 F 3 "~" H 13430 3000 50  0001 C CNN
@@ -1712,10 +1813,10 @@ F 3 "~" H 13430 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_Dual_AACC D3
+L Device:LED_Dual_AACC D6
 U 1 1 5E6CA414
 P 13400 3700
-F 0 "D3" H 13400 4124 50  0000 C CNN
+F 0 "D6" H 13400 4124 50  0000 C CNN
 F 1 "LTST-C295KGKRKT" H 13400 4033 50  0000 C CNN
 F 2 "LED_SMD:LED_LiteOn_LTST-C295K" H 13430 3700 50  0001 C CNN
 F 3 "~" H 13430 3700 50  0001 C CNN
@@ -1723,10 +1824,10 @@ F 3 "~" H 13430 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_Dual_AACC D4
+L Device:LED_Dual_AACC D7
 U 1 1 5E6CB05A
 P 13400 4400
-F 0 "D4" H 13400 4824 50  0000 C CNN
+F 0 "D7" H 13400 4824 50  0000 C CNN
 F 1 "LTST-C295KGKRKT" H 13400 4733 50  0000 C CNN
 F 2 "LED_SMD:LED_LiteOn_LTST-C295K" H 13430 4400 50  0001 C CNN
 F 3 "~" H 13430 4400 50  0001 C CNN
@@ -1734,10 +1835,10 @@ F 3 "~" H 13430 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_Dual_AACC D5
+L Device:LED_Dual_AACC D8
 U 1 1 5E6CBE97
 P 13400 5100
-F 0 "D5" H 13400 5524 50  0000 C CNN
+F 0 "D8" H 13400 5524 50  0000 C CNN
 F 1 "LTST-C295KGKRKT" H 13400 5433 50  0000 C CNN
 F 2 "LED_SMD:LED_LiteOn_LTST-C295K" H 13430 5100 50  0001 C CNN
 F 3 "~" H 13430 5100 50  0001 C CNN
@@ -1745,10 +1846,10 @@ F 3 "~" H 13430 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_Dual_AACC D6
+L Device:LED_Dual_AACC D10
 U 1 1 5E6CDBA4
 P 13400 5800
-F 0 "D6" H 13400 6224 50  0000 C CNN
+F 0 "D10" H 13400 6224 50  0000 C CNN
 F 1 "LTST-C295KGKRKT" H 13400 6133 50  0000 C CNN
 F 2 "LED_SMD:LED_LiteOn_LTST-C295K" H 13430 5800 50  0001 C CNN
 F 3 "~" H 13430 5800 50  0001 C CNN
@@ -1756,10 +1857,10 @@ F 3 "~" H 13430 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_Dual_AACC D7
+L Device:LED_Dual_AACC D11
 U 1 1 5E6CF169
 P 13400 6500
-F 0 "D7" H 13400 6924 50  0000 C CNN
+F 0 "D11" H 13400 6924 50  0000 C CNN
 F 1 "LTST-C295KGKRKT" H 13400 6833 50  0000 C CNN
 F 2 "LED_SMD:LED_LiteOn_LTST-C295K" H 13430 6500 50  0001 C CNN
 F 3 "~" H 13430 6500 50  0001 C CNN
