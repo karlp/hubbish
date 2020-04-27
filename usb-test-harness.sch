@@ -4,22 +4,22 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
-Title "Cascading per port controllable USB hub"
+Title "Hubbish: Cascading per port controllable USB hub"
 Date "2019-12-03"
 Rev ""
 Comp ""
 Comment1 "intended for controlling libopencm3 regression test boards"
-Comment2 "three double ports for discos w/ user usb"
+Comment2 "three double ports for test targets w/ user usb"
 Comment3 "one up, one down"
-Comment4 ""
+Comment4 "github.com/karlp/hubbish"
 Comment5 ""
 Comment6 ""
 Comment7 ""
 Comment8 ""
 Comment9 ""
 $EndDescr
-Text Notes 900  1900 0    315  ~ 0
-If you think this sheet is boring,\ntake it up with ANTTO!
+Text Notes 1000 2300 0    236  ~ 0
+It's just a USB2-HS hub.\nIt has leds and per port power switching though,\nand it has a case, and can be cascaded.\nNo SMAs though :(
 Text Notes 4100 3600 0    197  ~ 0
 Feeling uppitty, into configuration\nand the world at large?
 Text Notes 4100 5500 0    197  ~ 0

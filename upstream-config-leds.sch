@@ -681,13 +681,13 @@ Programming header\nfor EEPROM
 Text Notes 1100 6800 0    50   ~ 0
 Optional, pin straps cover everything but usb device serial!
 Text Notes 1200 10600 0    50   ~ 0
-Screw terminals for external regulated 5V input\nFuture versions may include the 20-30W\nbuck regulator  and allow "any" input voltage
+Terminals for external regulated 5V input\nFuture versions may include the 20-30W\nbuck regulator  and allow "any" input voltage
 Text Notes 1300 2700 0    50   ~ 0
 As a HUB, all shields together,\nand grounded at one point.\nAs per SMSC AN 15.17 
 Text Notes 1500 8100 0    59   ~ 0
 TPS54820 or\nMP9477 or\nSC6001 with external fets (fuck no!)\n(6 DS ports * 1A * 5V minimum)
 Text Notes 1900 9300 0    50   ~ 0
-Must breakdown at ~6V to protect properly
+Must breakdown at ~~6V to protect properly
 Text Notes 2600 1400 0    50   ~ 0
 usb A MALE for plugging directly into an upstream\n+\nusb b micro for cable connecting as top level
 Text Notes 3500 8900 0    50   ~ 0
@@ -701,7 +701,7 @@ CFG straps\n011: EEPROM\n101: defaults+dyn+led=usb\n100: defaults+dyn ?
 Text Notes 4700 5300 0    50   ~ 0
 Connect for EEP programming\n(holds hub in reset)
 Text Notes 5800 7300 0    197  ~ 0
-Missing:\n* input caps on 5V?!\n* umm, that's it?\n
+Missing:\n* umm, nothing left?\n
 Text Notes 5900 8500 0    236  ~ 0
 NOT TODO\n* 24V->5V on board, too much work\n
 Text Notes 6000 3400 0    31   ~ 0
@@ -724,11 +724,7 @@ Text Label 4400 2100 0    50   ~ 0
 UP+
 Text Label 4400 2200 0    50   ~ 0
 UP-
-Text Label 4850 2100 2    50   ~ 0
-UP+
 Text Label 4850 2300 2    50   ~ 0
-UP-
-Text Label 5250 2100 0    50   ~ 0
 UP+
 Text Label 5250 2300 0    50   ~ 0
 UP-
@@ -748,14 +744,14 @@ Text Label 6900 4300 0    59   ~ 0
 XTAL1
 Text Label 6900 4800 0    59   ~ 0
 XTAL2
-Text Label 7000 3400 2    50   ~ 0
-LOCAL_PWR
 Text Label 7000 3500 2    50   ~ 0
 EE_SDA
 Text Label 7000 3600 2    50   ~ 0
 EE_SCL
 Text Label 7100 2500 0    50   ~ 0
 VBUS_DET
+Text Label 7150 3400 2    50   ~ 0
+LOCAL_PWR
 Text Label 7300 3000 2    50   ~ 0
 UP-
 Text Label 7300 3100 2    50   ~ 0
@@ -1773,7 +1769,7 @@ U 1 1 5EA2D8DE
 P 5050 2200
 F 0 "U12" V 5300 2000 50  0000 L CNN
 F 1 "NUP4202" V 5300 2250 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5100 2275 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 5100 2275 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub_link/Collateral/NUP4202W1-D.PDF" H 5100 2275 50  0001 C CNN
 	1    5050 2200
 	0    1    1    0   
