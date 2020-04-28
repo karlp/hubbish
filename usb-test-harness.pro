@@ -37,10 +37,6 @@ ERC_CheckBusToBusConflicts=1
 ERC_CheckBusToNetConflicts=1
 [SchematicFrame]
 version=1
-[sheetnames]
-1=00000000-0000-0000-0000-00005ea59a0f:
-2=00000000-0000-0000-0000-00005e1ad3c1:upstream-config-leds
-3=00000000-0000-0000-0000-00005e1ad41f:downstream-port-power
 [LibeditFrame]
 version=1
 [pcbnew]
@@ -288,3 +284,7 @@ uViaDrill=0.1
 dPairWidth=0.15
 dPairGap=0.15
 dPairViaGap=0.25
+[sheetnames]
+1=00000000-0000-0000-0000-00005ea76207:
+2=00000000-0000-0000-0000-00005e1ad3c1:upstream-config-leds
+3=00000000-0000-0000-0000-00005e1ad41f:downstream-port-power

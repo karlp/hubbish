@@ -3,7 +3,7 @@ EELAYER 33 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 3
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -48,6 +48,8 @@ NoConn ~ 10300 5050
 NoConn ~ 10350 7700
 NoConn ~ 10700 5050
 NoConn ~ 10750 7700
+NoConn ~ 3050 10100
+NoConn ~ 3450 10100
 Wire Wire Line
 	2400 9400 2400 9500
 Wire Wire Line
