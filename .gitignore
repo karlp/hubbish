@@ -1,0 +1,9 @@
+# Various kicad things
+*.bak
+*.sch-bak
+*.kicad_prl
+*-backups/
+
+# We include single zips of production gerbers, not the individuals
+*.gbr
+*.drl
