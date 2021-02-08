@@ -33,3 +33,20 @@ repository when it became apparent that it was it's own monster.
 
 ## Tools
 The project uses kicad 5.99 era project files, sorry about that.
+
+## Versions
+### r2020-03
+#### Bugs
+
+1. Missing a serial resistor for the crystal.  Doesn't enumerate the hub without it.
+1. Needs a jumper wire if yout want to actually run it as a bus powered hub for testing.
+1. Port numbers are super wonky.
+1. .... doesn't actually work?  I suspect I just have assembly issues, but...
+1. Bigger than 100x100, which fits the Bud case nicely, and didn't matter when 4L was always just size based
+   but now that jlc is doing 4L super cheap for under 100x100, this can be considered a bug
+1. vertical (z axis) positioning of the usptream usb-a-male and downstream usb-a-female for chaining doesn't
+   align properly.
+
+### r2121-....
+"Fix the bugs"
+
