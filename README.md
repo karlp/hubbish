@@ -29,3 +29,7 @@ Oh, and design it to actually go in a case.
 ## Origins
 This project was split out from the [libopencm3-tests](http://github.com/karlp/libopencm3-tests)
 repository when it became apparent that it was it's own monster.
+
+
+## Tools
+The project uses kicad 5.99 era project files, sorry about that.
