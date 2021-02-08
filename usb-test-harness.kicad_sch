@@ -1,6 +1,4 @@
-(kicad_sch (version 20200828) (generator eeschema)
-
-  (page 1 3)
+(kicad_sch (version 20210126) (generator eeschema)
 
   (paper "A4")
 
@@ -46,19 +44,22 @@
   (text "It's just a USB2-HS hub.\nIt has leds and per port power switching though,\nand it has a case, and can be cascaded.\nNo SMAs though :("
     (at 25.4 58.42 0)
     (effects (font (size 5.9944 5.9944)) (justify left bottom))
+    (uuid d3fb89f6-0648-4fe5-834b-31943140e296)
   )
   (text "Feeling uppitty, into configuration\nand the world at large?"
     (at 104.14 91.44 0)
-    (effects (font (size 5.0038 5.0038)) (justify left bottom))
+    (effects (font (size 5.004 5.004)) (justify left bottom))
+    (uuid 22126104-c374-42e8-9c93-4c5a134f1015)
   )
   (text "Feeling down, feeling like power\nswitching and chunks of metal?"
     (at 104.14 139.7 0)
     (effects (font (size 5.0038 5.0038)) (justify left bottom))
+    (uuid 20248bd7-4320-44c7-b71b-809cff84b3da)
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 177.8 106.68 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "00000000-0000-0000-0000-00005e6b1ab6")
+    (uuid 00000000-0000-0000-0000-00005e6b1ab6)
     (property "Reference" "H1" (id 0) (at 180.34 105.537 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
@@ -75,7 +76,7 @@
 
   (symbol (lib_id "Mechanical:MountingHole") (at 185.42 106.68 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "00000000-0000-0000-0000-00005e6b1f07")
+    (uuid 00000000-0000-0000-0000-00005e6b1f07)
     (property "Reference" "H2" (id 0) (at 187.96 105.537 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
@@ -92,7 +93,7 @@
 
   (symbol (lib_id "Mechanical:MountingHole") (at 193.04 106.68 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "00000000-0000-0000-0000-00005e6b268f")
+    (uuid 00000000-0000-0000-0000-00005e6b268f)
     (property "Reference" "H3" (id 0) (at 195.58 105.537 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
@@ -109,7 +110,7 @@
 
   (symbol (lib_id "Mechanical:MountingHole") (at 200.66 106.68 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "00000000-0000-0000-0000-00005e6b27cc")
+    (uuid 00000000-0000-0000-0000-00005e6b27cc)
     (property "Reference" "H4" (id 0) (at 203.2 105.537 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
@@ -146,6 +147,12 @@
     (property "Sheet file" "upstream-config-leds.kicad_sch" (id 1) (at 35.56 102.1085 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/00000000-0000-0000-0000-00005e1ad3c1/" (page "2"))
+    (path "/00000000-0000-0000-0000-00005e1ad41f/" (page "3"))
   )
 
   (symbol_instances
