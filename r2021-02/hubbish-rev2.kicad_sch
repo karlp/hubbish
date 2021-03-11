@@ -364,10 +364,10 @@
       (reference "C32") (unit 1) (value ".1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00005e1ad3c1/00000000-0000-0000-0000-00005e842d60"
-      (reference "C33") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C33") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-00005e1ad3c1/00000000-0000-0000-0000-00005e848ad5"
-      (reference "C34") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C34") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-00005e1ad3c1/00000000-0000-0000-0000-00005e1e3985"
       (reference "C35") (unit 1) (value ".1uF") (footprint "Capacitor_SMD:C_0603_1608Metric")
