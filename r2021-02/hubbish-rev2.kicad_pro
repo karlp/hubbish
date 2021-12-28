@@ -131,7 +131,8 @@
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
-    "layer_presets": []
+    "layer_presets": [],
+    "viewports": []
   },
   "boards": [],
   "cvpcb": {
@@ -452,6 +453,8 @@
   "schematic": {
     "annotate_start_num": 0,
     "drawing": {
+      "dashed_lines_dash_length_ratio": 12.0,
+      "dashed_lines_gap_length_ratio": 3.0,
       "default_bus_thickness": 12.0,
       "default_junction_size": 40.0,
       "default_line_thickness": 6.0,
@@ -502,6 +505,10 @@
     [
       "00000000-0000-0000-0000-00005e1ad41f",
       "downstream-port-power"
+    ],
+    [
+      "152e32c2-e0fb-44f8-8d88-d6407d12d020",
+      "power_input"
     ]
   ],
   "text_variables": {}
