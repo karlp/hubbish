@@ -677,9 +677,6 @@
     (path "/152e32c2-e0fb-44f8-8d88-d6407d12d020/ebaf1764-88b2-427f-acff-2dce482913b8"
       (reference "L1") (unit 1) (value "1.5uH") (footprint "Inductor_SMD:L_AVX_LMLP07A7")
     )
-    (path "/152e32c2-e0fb-44f8-8d88-d6407d12d020/fa201e95-46d1-42db-8efe-3263eb74063f"
-      (reference "NT1") (unit 1) (value "NetTie_2") (footprint "NetTie:NetTie-2_SMD_Pad0.5mm")
-    )
     (path "/152e32c2-e0fb-44f8-8d88-d6407d12d020/9a4e1c5a-f136-4689-9cd1-bfa86946c58f"
       (reference "Q1") (unit 1) (value "Si4435") (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
     )
