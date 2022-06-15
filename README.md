@@ -35,6 +35,21 @@ repository when it became apparent that it was it's own monster.
 The project uses kicad 5.99 era project files, sorry about that.
 
 ## Versions
+### "r2" r2021-03  (lol, finished and ordered 2022-06)
+### Improvements:
+Adds a 30-40ish Watt power supply.  Inductor is rated to 9A, regulator to 12A. Per port power switches are
+still 1A nominal, so nomninally 7x5x1 = 35W for the ports plus around .5x3.3 for the hub itself, or an extra say 2W.
+
+What's it look like?
+![r2022-06 board view](r2021-02/hubbish-rev2-202206-round.png)
+
+* [Schematic](r2021-02/hubbish-rev2.pdf)
+
+#### Bugs
+Lol none!  (ordered only so far, not assembled yet.
+vertical z-axis has been skipped for this one so far...
+
+
 ### r2020-03
 #### Bugs
 
