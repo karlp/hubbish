@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.19999999999999998
+          "min_clearance": 0.508
         }
       },
       "diff_pair_dimensions": [
@@ -408,9 +408,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "sic-gl-unused",
-        "nets": [
-          "unconnected-(U2-Pad10)"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
