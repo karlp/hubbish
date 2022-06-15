@@ -38,7 +38,10 @@ The project uses kicad 5.99 era project files, sorry about that.
 ### "r2" r2021-03  (lol, finished and ordered 2022-06)
 ### Improvements:
 Adds a 30-40ish Watt power supply.  Inductor is rated to 9A, regulator to 12A. Per port power switches are
-still 1A nominal, so nomninally 7x5x1 = 35W for the ports plus around .5x3.3 for the hub itself, or an extra say 2W.
+still 1A nominal, so nominally 7x5x1 = 35W for the ports plus around .5x3.3 for the hub itself, or an extra say 2W.
+
+Resizes to 100x80mm so cheaper manufacturing again.  We're no longer trying to find an off the shelf case.
+Places like 3d craft cloud have gotten so cheap I'm going to just make a custom case and have it printed on demand.
 
 What's it look like?
 ![r2022-06 board view](r2021-02/hubbish-rev2-202206-round.png)
