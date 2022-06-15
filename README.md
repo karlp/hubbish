@@ -46,7 +46,7 @@ Places like 3d craft cloud have gotten so cheap I'm going to just make a custom 
 What's it look like?
 ![r2022-06 board view](r2021-02/hubbish-rev2-202206-round.png)
 
-* [Schematic](r2021-02/hubbish-rev2.pdf)
+* [Schematic-r2](r2021-02/hubbish-rev2.pdf)
 
 #### Bugs
 Lol none!  (ordered only so far, not assembled yet.
@@ -54,6 +54,11 @@ vertical z-axis has been skipped for this one so far...
 
 
 ### r2020-03
+What's it look like?
+![r1 board view](r2020-03/hubbish-r1.png)
+* [Schematic-r1](r2020-03/usb-test-harness.pdf)
+
+
 #### Bugs
 
 1. Missing a serial resistor for the crystal.  Doesn't enumerate the hub without it.
@@ -65,6 +70,4 @@ vertical z-axis has been skipped for this one so far...
 1. vertical (z axis) positioning of the usptream usb-a-male and downstream usb-a-female for chaining doesn't
    align properly.
 
-### r2121-....
-"Fix the bugs"
 
