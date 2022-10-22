@@ -1,3 +1,9 @@
+2022-06 rev:
+* missing ground connection to both caps for the 3v3 supply.  well done.
+  will need bodge wire.
+* horrible bom optimization...
+
+
 * opening up on my other computer is still totally fucking busted
 * the diode I picked for the "small" for the leds doesn't match the part I orderd, 323 vs 123 shits
 * include a latest generation pick and place thingy?

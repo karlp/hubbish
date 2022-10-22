@@ -55,7 +55,9 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|87625694|126967999|141036fa-a216-4ddb-ab74-e92ec7c26f7d|4635eedd-a860-44e0-b6e9-2f1295510933"
+      ],
       "meta": {
         "version": 2
       },
@@ -463,9 +465,9 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "usb-test-harness2.step",
+      "step": "hubbish-rev2.step",
       "vmrl": "",
-      "vrml": ""
+      "vrml": "hubbish-rev2.wrl"
     },
     "page_layout_descr_file": ""
   },
