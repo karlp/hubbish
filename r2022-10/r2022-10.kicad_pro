@@ -385,13 +385,17 @@
         "microvia_drill": 0.1,
         "name": "Power distribution",
         "nets": [
+          "+3V3",
+          "+5V",
+          "+VDC",
           "/downstream-port-power/VBUS1",
           "/downstream-port-power/VBUS2",
           "/downstream-port-power/VBUS3",
           "/downstream-port-power/VBUS4",
           "/downstream-port-power/VBUS5",
           "/downstream-port-power/VBUS6",
-          "/downstream-port-power/VBUS_DS"
+          "/downstream-port-power/VBUS_DS",
+          "/upstream-config-leds/LED_DRIVE"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
