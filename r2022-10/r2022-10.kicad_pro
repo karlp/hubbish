@@ -370,7 +370,7 @@
   "net_settings": {
     "classes": [
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -384,10 +384,10 @@
         "track_width": 0.2,
         "via_diameter": 0.6,
         "via_drill": 0.3,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -396,28 +396,15 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Power distribution",
-        "nets": [
-          "+3V3",
-          "+5V",
-          "+VDC",
-          "/downstream-port-power/VBUS1",
-          "/downstream-port-power/VBUS2",
-          "/downstream-port-power/VBUS3",
-          "/downstream-port-power/VBUS4",
-          "/downstream-port-power/VBUS5",
-          "/downstream-port-power/VBUS6",
-          "/downstream-port-power/VBUS_DS",
-          "/upstream-config-leds/LED_DRIVE"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -426,16 +413,15 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "sic-gl-unused",
-        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
         "via_drill": 0.3,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.127,
         "diff_pair_gap": 0.127,
         "diff_pair_via_gap": 0.25,
@@ -444,38 +430,32 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "usb-4l-2313",
-        "nets": [
-          "/downstream-port-power/DS+",
-          "/downstream-port-power/DS-",
-          "/downstream-port-power/U1+",
-          "/downstream-port-power/U1-",
-          "/downstream-port-power/U2+",
-          "/downstream-port-power/U2-",
-          "/downstream-port-power/U3+",
-          "/downstream-port-power/U3-",
-          "/downstream-port-power/U4+",
-          "/downstream-port-power/U4-",
-          "/downstream-port-power/U5+",
-          "/downstream-port-power/U5-",
-          "/downstream-port-power/U6+",
-          "/downstream-port-power/U6-",
-          "/upstream-config-leds/UP+",
-          "/upstream-config-leds/UP-"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
         "via_diameter": 0.6,
         "via_drill": 0.3,
-        "wire_width": 6.0
+        "wire_width": 6
       }
     ],
     "meta": {
-      "version": 2
+      "version": 3
     },
     "net_colors": null,
     "netclass_assignments": null,
     "netclass_patterns": [
+      {
+        "netclass": "Power distribution",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "Power distribution",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "Power distribution",
+        "pattern": "+VDC"
+      },
       {
         "netclass": "Power distribution",
         "pattern": "/downstream-port-power/VBUS1"
@@ -506,7 +486,7 @@
       },
       {
         "netclass": "Power distribution",
-        "pattern": "GNDPWR"
+        "pattern": "/upstream-config-leds/LED_DRIVE"
       },
       {
         "netclass": "usb-4l-2313",
@@ -580,7 +560,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "hubbish-rev2.step",
+      "step": "hubbish-rev3.step",
       "vmrl": "",
       "vrml": "hubbish-rev2.wrl"
     },
@@ -626,6 +606,8 @@
     "plot_directory": "",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
+    "spice_save_all_currents": false,
+    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
