@@ -72,13 +72,15 @@ kmem[0x16:0x16+2*len(mfr)] = mfr.encode("utf-16le")
 kmem[0x54:0x54+2*len(prod)] = prod.encode("utf-16le")
 kmem[0x92:0x92+2*len(ser)] = ser.encode("utf-16le")
 # Port maps for hubbish r3 to be "nicely" ordered.
+# remember, it's physical to logical mappings.
 kmem[0xfb] = 0x43
 kmem[0xfc] = 0x21
-kmem[0xfd] = 0x67
-kmem[0xfe] = 0x05
+kmem[0xfd] = 0x57
+kmem[0xfe] = 0x06
 
 print(kmem)
 
+print(f"i2cconfig --sda=21 --scl=22")
 for i in range(len(kmem)//16):
     vals = " ".join([hex(zz) for zz in kmem[i*16:(i+1)*16]])
     print(f"i2cset -c 0x50 -r {i*16} {vals}")
