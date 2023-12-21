@@ -3662,6 +3662,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 2046e679-a3c6-4f40-9f60-c370c72ce0f6)
   )
+  (text "FIXME - \"local power\" can't just be 3v3.\nthat's always there, whether 3v3 came\nfrom vbus or vext!"
+    (at 137.16 33.02 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 21f89a76-ea14-4b3a-a44d-37d88493a632)
+  )
   (text "DNP\nIf you're using EEPROM,  CFG_SEL0 covers this" (at 93.98 147.32 0)
     (effects (font (size 1.4986 1.4986)) (justify left bottom))
     (uuid 27907865-d27a-4da4-b767-98ae6f551fd3)
@@ -3671,7 +3676,8 @@
     (effects (font (size 0.9906 0.9906)) (justify left bottom))
     (uuid 2b20b5f5-2ce8-4fb2-b548-b16530b1077c)
   )
-  (text "Copied from NanoPi boards" (at 228.6 251.46 0)
+  (text "Copied from NanoPi boards\n(But badly, these should have been a matched pair\neg bcm856bs (as they used) or \nmpn:BCM857BS-7-F lcsc: C105896"
+    (at 218.44 261.62 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 651499c3-64e8-4e12-bb97-ac0d1e4ba8d5)
   )

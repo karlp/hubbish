@@ -1711,6 +1711,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b9314991-c54c-4740-a892-7244732c0b63)
   )
+  (text "GARBAGE FIXME\n\"pull pgood high through >10k to use this\"\n(ie, if you want this to be a led, you need a bjt/fet)\n(ie, do the right thing with this and local power you dip shit)"
+    (at 175.26 93.98 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid e36fc9c5-88b5-4a4f-af59-4c2320837009)
+  )
 
   (label "pgood" (at 182.88 104.14 90)
     (effects (font (size 1.27 1.27)) (justify left bottom))
