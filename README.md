@@ -53,9 +53,9 @@ But, the 40W supply works! This is the biggest DCDC supply I'd ever made myself.
 
 This design also just decided that programming the EEPROM was the _right_ thing to do, as it also lets you arrange the LEDs nicely to match the ports, and provide proper serial numbers, which are also an important part of a big cascaded port power switching design. [generatei2c.py] is a python script that generates commands for use with i2cutils to program the eeprom via the header.  I used the [i2c_tools example](https://github.com/espressif/esp-idf/tree/master/examples/peripherals/i2c/i2c_tools) on an ESP32 devboard to do this.  It's... very simplistic, but it's enough.
 
-![r2022-10 board view](r2022-10/hubbish-rev3-2022-10-pcb.jpg)
+* ![r2022-10 board view](r2022-10/hubbish-rev3-2022-10-pcb.jpg)
 * [Schematic-r3](r2022-10/hubbish-rev3-2022-10.pdf)
-Load testing all ports at once.  (I have thermal images, but have lost them... will have to retest)
+* Load testing all ports at once.  (I have thermal images, but have lost them... will have to retest)
 ![r2022-10-load-testing-view](r2022-10/hubbish-rev3-testing-usb-loads-IMG_20221225_201715.jpg)
 
 
