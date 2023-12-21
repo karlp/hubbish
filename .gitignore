@@ -1,9 +1,16 @@
 # Various kicad things
 *.bak
 *.sch-bak
+*.kicad_sch-bak
 *.kicad_prl
 *-backups/
+_autosave*
+fp-info-cache
+*.kicad*.lck
 
 # We include single zips of production gerbers, not the individuals
 *.gbr
 *.drl
+
+# Freecad backups
+*.FCStd1
